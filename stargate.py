@@ -61,7 +61,7 @@ if button:
         st.write(summary)
     df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
        
-st.dataframe(df)
+st.dataframe(df.head(10))
 
 # add a footer
 st.subheader('Created with love by: Elle Neal')
