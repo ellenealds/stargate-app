@@ -57,6 +57,7 @@ button = st.button('Generate Episode Synopsis')
 if button:
     with st.spinner('Generating Episode Synopsis...'):
         summary = summarise(text_input)
+        df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
         #save the summary to a variable and use it to display the summary
         st.write(summary)
 
@@ -65,7 +66,6 @@ button2 = st.button('Add to table')
 
 # when the button is clicked, add the summary to the dataframe
 if button2:
-    df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
     st.dataframe(df)
 
 # add a footer
