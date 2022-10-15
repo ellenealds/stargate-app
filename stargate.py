@@ -59,7 +59,9 @@ if button:
         summary = summarise(text_input)
         df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
         #save the summary to a variable and use it to display the summary
-        st.write(summary)
+ st.write(summary)
+        
+        
 
 # add button to automatically update the table with the new summary
 button2 = st.button('Add to table')
