@@ -24,7 +24,7 @@ with col3:
 
 #summarise text
 def summarise(text_input):
-    openai.api_key = os.getenv("OPENAI_API_KEY") 
+    openai.api_key = secrets.py 
     
     #text_input = text_input
 
