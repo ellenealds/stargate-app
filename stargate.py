@@ -59,9 +59,7 @@ if button:
         summary = summarise(text_input)
         #save the summary to a variable and use it to display the summary
         st.write(summary)
-    df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
-       
-st.dataframe(df.head(10))
-
+        end = summarise(summary + 'How does this stargate episode end?')
+        stwrite(end)
 # add a footer
 st.subheader('Created with love by: Elle Neal')
