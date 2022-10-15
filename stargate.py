@@ -38,9 +38,9 @@ character = ', '.join(character)
 plot_twist = st.multiselect('Plot Twists', ['The team discovers a Stargate on a planet that is about to be destroyed by a supernova.', 'The team discovers a planet that is inhabited by humans.', 'The team discovers a planet that is inhabited by aliens.', 'The team discovers a planet that is inhabited by both humans and aliens.', 'The team discovers a planet that is inhabited by Goauld.', 'The team discovers a planet that is inhabited by Wraith.', 'The team discovers a planet that is inhabited by Ancients.', 'The team discovers a planet that is uninhabitable.', 'The team is attacked by a Goauld ship.', 'The team is attacked by a Wraith ship.', 'The team is attacked by an Ancient ship.', 'The team is stranded on a planet with no Stargate.', ' The team is attacked by a human ship.', 'The team discovers a Goauld ship.', 'The team discovers a Zpm.', 'The team discovers an Ancient ship.', 'The team discovers a Wraith ship.', 'The team discovers a planet with a Stargate that is about to be destroyed by a supernova.', 'The team is stranded on a planet with no food or water.', 'The team is stranded on a planet with no way to contact Earth.'])
 plot_twist = ', '.join(plot_twist)
 
-addtext_input = st.text_input('Enter additonal information about your story, for example: include a romantic scene.')
+text_inputinlc = st.text_input('Enter additonal information about your story, for example: include a romantic scene.')
 
-text_input = f"Topic: Stargate Atlantis\nGenerate a four paragraph episode summary, this must engaging and exciting and must include the main character: \n\nmain character:{main}\nadditional characters:{character}\nplot twist:{plot_twist}\ntheme: {addtext_input}"
+text_input = f"Generate a four paragraph episode summary for Stargate Atlantis including the following:\n\n\nmain character:{main}\n\n\nadditional characters:{character}\n\n\nplot twist:{plot_twist}\n\n\ntheme: {text_inputinlc}\n\n\n."
 #display the prompt
 #st.write(text_input)
 
@@ -51,5 +51,4 @@ if button:
     # run the summarise function
     summary = summarise(text_input)
     summary1 = summarise(summary)
-    summary2 = summarise(summary1)
-    st.write(summary, summary1, summary2)
+    st.write(summary, summary1)
