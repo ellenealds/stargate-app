@@ -10,16 +10,16 @@ st.subheader('Select a plot from the list to see what happens in the next exciti
 # add images side by side
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.image('https://i.pinimg.com/originals/f7/e0/66/f7e0669ea5c8755aa03c7372431e3e31.jpg', width=200)
-    st.write('Stargate Atlantis')
+    st.image('https://ic.pics.livejournal.com/neevebrody/11550022/524545/524545_original.gif', width=200)
+    #st.write('Stargate Atlantis')
 
 with col2:
-    st.image('https://66.media.tumblr.com/9ff21578ddb83bc27312f7d24c6ad39e/tumblr_mujglyw95t1rk6qyvo1_400.gifv', width=200)
-    st.write('Stargate Atlantis')
+    st.image('https://ic.pics.livejournal.com/neevebrody/11550022/362682/original.gif', width=200)
+    #st.write('Stargate Atlantis')
 
 with col3:
-    st.image('https://i.pinimg.com/originals/24/6c/b4/246cb48668cda0c0f07ce22aacdf950f.jpg', width=200)
-    st.write('Stargate Atlantis')
+    st.image('https://ic.pics.livejournal.com/neevebrody/11550022/591621/591621_original.gif', width=200)
+    #st.write('Stargate Atlantis')
 
 #summarise text
 def summarise(text_input):
