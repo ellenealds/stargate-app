@@ -23,8 +23,8 @@ with col3:
 
 #summarise text
 def summarise(text_input):
-    openai.api_key = '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'
-
+    openai.api_key = OPENAI_KEY 
+    
     #text_input = text_input
 
     response = openai.Completion.create(
