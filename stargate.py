@@ -65,7 +65,7 @@ button2 = st.button('Add to table')
 
 # when the button is clicked, add the summary to the dataframe
 if button2:
-    df = df.concat({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
+    df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
     st.dataframe(df)
 
 # add a footer
