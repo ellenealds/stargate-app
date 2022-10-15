@@ -61,7 +61,7 @@ if button:
         st.write(summary)
         end = summarise(summary + 'How does this stargate episode end?')
         st.write(end)
-        next = summarise(end+'What will the next episode be about?")
+        next = summarise(end+'What will the next episode be about?')
         st.write(next)
 # add a footer
 st.subheader('Created with love by: Elle Neal')
