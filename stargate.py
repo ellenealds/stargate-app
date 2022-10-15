@@ -60,6 +60,6 @@ if button:
         #save the summary to a variable and use it to display the summary
         st.write(summary)
         end = summarise(summary + 'How does this stargate episode end?')
-        stwrite(end)
+        st.write(end)
 # add a footer
 st.subheader('Created with love by: Elle Neal')
