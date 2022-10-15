@@ -47,7 +47,7 @@ plot_twist = ', '.join(plot_twist)
 # create an empty dataframe with the column names
 df = pd.DataFrame(columns=['Plot Twists','Synopsis'])
 
-text_input = f"Generate a two-paragraph episode synopsis for Stargate Atlantis including Victoria Martin and John Sheppard as the main characters\ninclude a plot twist about:{plot_twist}\nJohn falls in love with Victoria.\n\n\n"
+text_input = f"Generate a two-paragraph episode synopsis for Stargate Atlantis including Victoria Martin and John Sheppard as the main characters\ninclude a plot twist about:{plot_twist}\nand describe a romantic scene beyween Victoria and John.\n\n\n"
 #display the prompt
 #st.write(text_input)
 
@@ -61,5 +61,7 @@ if button:
         st.write(summary)
         end = summarise(summary + 'How does this stargate episode end?')
         st.write(end)
+        next = summarise(end+'What will the next episode be about?")
+        st.write(next)
 # add a footer
 st.subheader('Created with love by: Elle Neal')
