@@ -59,7 +59,7 @@ if button:
         summary = summarise(text_input)
         #save the summary to a variable and use it to display the summary
         st.write(summary)
-        love = summarise(summary+"Describe a love scene between Victoria and John:")
+        love = summarise(summary+"Describe a love scene between Victoria and John in Stargate Atlantis:")
         st.write(love)
         end = summarise(summary+love + 'How does this stargate episode end?')
         st.write(end)
