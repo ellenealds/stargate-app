@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HR_TOKEN }}
-        run: git push https://elleai:$HF_TOKEN@huggingface.co/spaces/elleai/Stargate main
+        run: git pull https://elleai:$HF_TOKEN@huggingface.co/spaces/elleai/Stargate main
