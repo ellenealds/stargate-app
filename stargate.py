@@ -31,7 +31,7 @@ main = "Victoria Martin"
 
 # create a multi select box
 st.subheader('Select characters')
-character = st.multiselect('Characters', ['Dr. Elizabeth Weir', 'Ronon Dex', 'Colonel Steven Caldwell', 'Lt. Laura Cadman', 'Kavanagh', 'Lt. Colonel John Edwards', 'Woolsey', 'Lorne', 'Weir (Replicator)', 'Todd', 'Michael Kenmore', 'Major John Sheppard', ' Hermiod', 'Dr. Rodney McKay', 'Teyla Emmagan', 'Lt. Aiden Ford', 'Dr. Carson Beckett', 'Sgt. Major Ronald Greer', 'Lt. Colonel Samantha Carter', 'Dr. Jennifer Keller'])
+character = st.multiselect('Characters', ['Major John Sheppard','Dr. Elizabeth Weir', 'Ronon Dex', 'Colonel Steven Caldwell', 'Lt. Laura Cadman', 'Kavanagh', 'Lt. Colonel John Edwards', 'Woolsey', 'Lorne', 'Weir (Replicator)', 'Todd', 'Michael Kenmore', ' Hermiod', 'Dr. Rodney McKay', 'Teyla Emmagan', 'Lt. Aiden Ford', 'Dr. Carson Beckett', 'Sgt. Major Ronald Greer', 'Lt. Colonel Samantha Carter', 'Dr. Jennifer Keller'])
 # concatenate the selected options into a comma separated string
 character = ', '.join(character)
 
@@ -40,7 +40,7 @@ plot_twist = ', '.join(plot_twist)
 
 addtext_input = st.text_input('Enter additonal information about your story, for example: include a romantic scene.')
 
-text_input = f"Topic: Stargate Atlantis\nGenerate a five paragraph story, this must engaging and exciting and must include the main character: \n\nmain character:{main}\nadditional characters:{character}\nplot twist:{plot_twist}\ntheme: {addtext_input}"
+text_input = f"Topic: Stargate Atlantis\nGenerate a four paragraph episode summary, this must engaging and exciting and must include the main character: \n\nmain character:{main}\nadditional characters:{character}\nplot twist:{plot_twist}\ntheme: {addtext_input}"
 #display the prompt
 #st.write(text_input)
 
