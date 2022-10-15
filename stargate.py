@@ -44,6 +44,8 @@ def summarise(text_input):
 plot_twist = st.multiselect('Plot Twists', ['The team discovers a Stargate on a planet that is about to be destroyed by a supernova.', 'The team discovers a planet that is inhabited by humans.', 'The team discovers a planet that is inhabited by aliens.', 'The team discovers a planet that is inhabited by both humans and aliens.', 'The team discovers a planet that is inhabited by Goauld.', 'The team discovers a planet that is inhabited by Wraith.', 'The team discovers a planet that is inhabited by Ancients.', 'The team discovers a planet that is uninhabitable.', 'The team is attacked by a Goauld ship.', 'The team is attacked by a Wraith ship.', 'The team is attacked by an Ancient ship.', 'The team is stranded on a planet with no Stargate.', ' The team is attacked by a human ship.', 'The team discovers a Goauld ship.', 'The team discovers a Zpm.', 'The team discovers an Ancient ship.', 'The team discovers a Wraith ship.', 'The team discovers a planet with a Stargate that is about to be destroyed by a supernova.', 'The team is stranded on a planet with no food or water.', 'The team is stranded on a planet with no way to contact Earth.'])
 plot_twist = ', '.join(plot_twist)
 
+# create an empty dataframe with the column names
+df = pd.DataFrame(columns=['Plot Twists','Synopsis'])
 
 text_input = f"Generate a two-paragraph episode synopsis for Stargate Atlantis including Victoria Martin and John Sheppard as the main characters\ninclude a plot twist about:{plot_twist}\nJohn falls in love with Victoria.\n\n\n"
 #display the prompt
@@ -55,7 +57,9 @@ button = st.button('Generate Episode Synopsis')
 if button:
     with st.spinner('Generating Episode Synopsis...'):
         summary = summarise(text_input)
+        df = df.append({'Plot Twists': plot_twist, 'Synopsis': summary}, ignore_index=True)
         st.write(summary)
+        st.write(df)
 
 # add a footer
 st.subheader('Created with love by: Elle Neal')
