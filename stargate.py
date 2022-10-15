@@ -40,7 +40,7 @@ plot_twist = ', '.join(plot_twist)
 
 text_inputinlc = st.text_input('Enter additonal information about your story, for example: include a romantic scene.')
 
-text_input = f"Generate a four paragraph episode summary for Stargate Atlantis including the following:\n\n\nmain character:{main}\n\n\nadditional characters:{character}\n\n\nplot twist:{plot_twist}\n\n\ntheme: {text_inputinlc}\n\n\n."
+text_input = f"Generate a four paragraph episode synopsis for Stargate Atlantis including Victoria Martin as a main character and additional characters:{character}\n\n\ninclude a plot twist about:{plot_twist}\n\n\ninclude additional context about: {text_inputinlc}\n\n\n."
 #display the prompt
 #st.write(text_input)
 
