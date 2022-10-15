@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import openai
+import os
 
 # create a stargate themed app in streamlit
 st.title('Stargate Atlantis')
