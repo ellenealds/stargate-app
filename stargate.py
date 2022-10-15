@@ -5,10 +5,21 @@ import openai
 # create a stargate themed app in streamlit
 st.title('Stargate Atlantis')
 st.header('Vicky, you are now part of new Stargate Atlantis episodes')
-st.subheader('Select the character you want to be in the story and a plot twist, add some additonal text and see what happens in the next exciting episode of Stargate Atlantis')
+st.subheader('Select a plot from the list to see what happens in the next exciting episode of Stargate Atlantis')
 
-#add an image from a url
-st.image('https://wallup.net/wp-content/uploads/2019/09/06/347567-stargate-atlantis-adventure-television-series-action-drama-sci-fi-62.jpg')
+# add images side by side
+col1, col2, col3 = st.beta_columns(3)
+with col1:
+    st.image('https://i.pinimg.com/originals/f7/e0/66/f7e0669ea5c8755aa03c7372431e3e31.jpg', width=200)
+    st.write('Stargate Atlantis')
+
+with col2:
+    st.image('https://i.pinimg.com/736x/7e/f1/9c/7ef19cf2847e420f2368a36a2aaf2883--stargate-atlantis-movies.jpg', width=200)
+    st.write('Stargate Atlantis')
+
+with col3:
+    st.image('https://i.pinimg.com/originals/24/6c/b4/246cb48668cda0c0f07ce22aacdf950f.jpg', width=200)
+    st.write('Stargate Atlantis')
 
 #summarise text
 def summarise(text_input):
