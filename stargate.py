@@ -63,7 +63,7 @@ if button:
         st.write(love)
         end = summarise(summary+love + 'How does this stargate episode end?')
         st.write(end)
-        next = summarise(summary+love+end+'What will the next episode be about?')
+        next = summarise(summary+love+end+'What will the next episode be about with Victoria and John?')
         st.write(next)
 # add a footer
 st.subheader('Created with love by: Elle Neal')
