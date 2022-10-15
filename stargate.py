@@ -34,6 +34,7 @@ def summarise(text_input):
         temperature=0.7,
         max_tokens=2000,
         top_p=1,
+        best_of = 4,
         frequency_penalty=0,
         presence_penalty=0
     )
